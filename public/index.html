@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello world</title>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="client.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/webrtc-adapter@8.0.0/dist/adapter_core.min.js"></script> -->
+
+</head>
+<body>	
+	User
+	<input id="userName" type="text">
+	Room
+	<input id="roomId" type="text">
+	<button id="start">Connect</button><br>
+	<button id="muteVideo">Mute Video</button>
+	<button id="muteAudio">Mute Audio</button>
+	<button id="share">Share</button>
+
+	<div id="container" class="video-position">
+		<video id="localVideo" autoplay="autoplay" muted="true"></video>
+		<!-- <video id="remoteVideo" autoplay playsinline></video> -->
+	</div>
+</body>
+</html>
